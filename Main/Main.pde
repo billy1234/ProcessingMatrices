@@ -9,13 +9,32 @@ void setup() {
 
 void draw() {
   background(255);
-  matrix m = new matrix(3,0,
-                        0,2);
-  x.draw(m);
-  y.draw(m);
-  z.draw(m);
-  w.draw(m);
-  p.draw(m);
+  matrix    m1 = new matrix(3,0,
+                            1,2),
+                        
+            m2 = new matrix(1,0,
+                            0,1);
+  
+  stroke(0);
+  x.draw();
+  y.draw();
+  z.draw();
+  w.draw();
+  p.draw();
+  
+  stroke(40,255,40);
+  x.draw(m1);
+  y.draw(m1);
+  z.draw(m1);
+  w.draw(m1);
+  p.draw(m1);
+  
+  stroke(40,40,255);
+  x.draw(m2);
+  y.draw(m2);
+  z.draw(m2);
+  w.draw(m2);
+  p.draw(m2);
 }
 
 
